@@ -1,0 +1,43 @@
+.destaque__botoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.destaque__botao-assistir {
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.destaque__botao-assistir:hover {
+  background-color: #ffffffa2;
+}
+
+.botao-assistir__texto {
+  font-size: 17px;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.destaque__botao-informacao {
+  background-color: #6d6d6ec0;
+  display: flex;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.destaque__botao-informacao:hover {
+  background-color: #6d6d6e6e;
+}
+
+.botao-informacao__texto {
+  font-size: 17px;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+}

@@ -1,0 +1,33 @@
+.destaque {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url(../img/destaque/movie-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.destaque-container {
+  grid-row: 2;
+  margin-left: 60px;
+}
+
+.destaque__imagem {
+  max-width: 90%;
+}
+
+.destaque__texto {
+  color: #ffffff;
+  text-shadow: #000000 2px 2px 4px;
+  font-size: 1.125rem;
+  padding-top: 10px;
+  line-height: 1.4;
+}
+
+.destaque__classificacao {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}

@@ -1,0 +1,11 @@
+@import url(botoes.css);
+@import url(cabecalho.css);
+@import url(destaque.css);
+@import url(filmes.css);
+@import url(rodape.css);
+
+body {
+  background-color: #000000;
+  font-family: "Martel Sans", sans-serif;
+  overflow-x: hidden;
+}
