@@ -10,7 +10,7 @@
 
 .destaque-container {
   grid-row: 2;
-  margin-left: 60px;
+  padding-left: 60px;
 }
 
 .destaque__imagem {
@@ -30,4 +30,53 @@
   font-size: 1.25rem;
   margin-bottom: 10px;
   font-weight: 600;
+}
+
+@media (max-width: 834px) {
+  .destaque {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+      url(../img/destaque/movie-back-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2.6fr 1fr;
+  }
+
+  .destaque-container {
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .destaque__imagem {
+    display: inline;
+    max-width: 60%;
+    align-items: center;
+  }
+
+  .destaque__texto {
+    display: none;
+  }
+
+  .destaque__classificacao {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .destaque {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+      url(../img/destaque/movie-back-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.6fr 1fr;
+  }
+
+  .destaque__imagem {
+    align-self: center;
+    display: inline;
+    max-width: 50%;
+  }
 }

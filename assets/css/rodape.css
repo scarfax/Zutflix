@@ -13,7 +13,7 @@ footer {
   padding: 25px;
   display: flex;
   flex-direction: row;
-  gap: 45px;
+  gap: 25px;
   cursor: pointer;
 }
 
@@ -40,4 +40,16 @@ footer {
 
 .rodape__textos li:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .rodape__icones {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+  }
+
+  .rodape__textos {
+    height: 120px;
+  }
 }

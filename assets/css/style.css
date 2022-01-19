@@ -3,6 +3,7 @@
 @import url(destaque.css);
 @import url(filmes.css);
 @import url(rodape.css);
+@import url(reset.css);
 
 body {
   background-color: #000000;
