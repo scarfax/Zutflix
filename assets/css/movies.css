@@ -1,95 +1,94 @@
-.filmes__container {
+.movies__container {
   display: flex;
   flex-wrap: nowrap;
   gap: 15px;
   margin: 0 30px;
 }
 
-.filmes__item {
-  max-width: 100%;
+.movies__item {
   border-radius: 4px;
-  cursor: pointer;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  max-width: 100%;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.filmes__texto {
-  font-size: 20px;
+.movies__text {
   color: #ffffff;
+  font-size: 20px;
   padding: 30px;
 }
 
-.filmes__item:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  opacity: 0;
+.movies__item:after {
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+  content: "";
+  height: 100%;
+  opacity: 0;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
   z-index: -1;
 }
 
-.filmes__item:hover {
+.movies__item:hover {
   transform: scale(1.25, 1.25);
 }
 
-.filmes__item:hover::after {
+.movies__item:hover::after {
   opacity: 1;
 }
 
-.filmes__mobile {
+.movies__mobile {
   display: none;
 }
 
 @media (max-width: 834px) {
-  .filmes__mobile {
-    display: block;
-    max-width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-
-  .filmes__mobile:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+  movies__mobile:after {
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 100%;
+    opacity: 0;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
     z-index: -1;
   }
 
-  .filmes__mobile:hover {
+  .movies__mobile:hover {
     transform: scale(1.15, 1.15);
   }
 
-  .filmes__mobile:hover::after {
+  .movies__mobile:hover::after {
     opacity: 1;
   }
 
-  .filmes__item {
+  .movies__mobile {
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    max-width: 100%;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .movies__item {
     display: none;
   }
 
-  .filmes__container {
+  .movies__container {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
     margin: 0 15px;
   }
 
-  .filmes__texto {
+  .movies__texto {
     font-size: 1.875rem;
-    padding: 20px; 10px
+    padding: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .filmes__mobile-last {
+  .movies__mobile-last {
     display: none;
   }
-
 }
