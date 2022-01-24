@@ -1,29 +1,29 @@
-.destaque__botoes {
+.highlight__buttons {
   display: flex;
   gap: 15px;
   margin-top: 10px;
   cursor: pointer;
 }
 
-.destaque__botao-assistir {
+.highlight__button-watch {
   background-color: #ffffff;
-  padding: 12px;
   display: flex;
   border-radius: 4px;
+  padding: 12px;
 }
 
-.destaque__botao-assistir:hover {
+.highlight__button-watch:hover {
   background-color: #ffffffa2;
 }
 
-.botao-assistir__texto {
+.button-watch__text {
   font-size: 17px;
   font-family: "Martel Sans", sans-serif;
   font-weight: 600;
   padding-left: 10px;
 }
 
-.destaque__botao-informacao {
+.highlight__button-information {
   background-color: #6d6d6ec0;
   display: flex;
   flex-wrap: nowrap;
@@ -32,11 +32,11 @@
   padding: 12px;
 }
 
-.destaque__botao-informacao:hover {
+.highlight__button-information:hover {
   background-color: #6d6d6e6e;
 }
 
-.botao-informacao__texto {
+.button-information__text {
   font-size: 17px;
   font-family: "Martel Sans", sans-serif;
   font-weight: 600;
@@ -44,23 +44,23 @@
 }
 
 @media (max-width: 834px) {
-  .destaque__botoes {
-    margin: 40px 100px;
+  .highlight__buttons {
     display: block;
+    margin: 40px 100px;
   }
 
-  .destaque__botao-assistir {
+  .highlight__button-watch {
     margin-bottom: 20px;
     justify-content: center;
   }
 
-  .destaque__botao-informacao {
+  .highlight__button-information {
     justify-content: center;
   }
 }
 
 @media (max-width: 430px) {
-  .destaque__botoes {
+  .highlight__buttons {
     display: block;
     margin: 25px 75px;
   }
