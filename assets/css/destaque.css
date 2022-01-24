@@ -1,74 +1,80 @@
-.highlight {
+.destaque {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url(../img/highlight/movie-back.jpg) no-repeat;
+    url(../img/destaque/movie-back.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 2fr 1fr;
 }
 
-.highlight__container {
-  grid-row: 2;
+.destaque-container {
   padding-left: 60px;
+  grid-row: 2;
 }
 
-.highlight__image {
+.destaque__imagem {
   max-width: 90%;
 }
 
-.highlight__text {
+.destaque__texto {
   color: #ffffff;
-  font-size: 1.125rem;
-  line-height: 1.4;
-  padding-top: 10px;
   text-shadow: #000000 2px 2px 4px;
+  font-size: 1.125rem;
+  padding-top: 10px;
+  line-height: 1.4;
 }
 
-.highlight__classification {
+.destaque__classificacao {
   color: #ffffff;
   font-size: 1.25rem;
-  font-weight: 600;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
-@media (max-width: 840px) {
-  .highlight {
+@media (max-width: 834px) {
+  .destaque {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-      url(../img/highlight/movie-back-mobile.jpg) no-repeat;
+      url(../img/destaque/movie-back-mobile.jpg);
     background-position: center;
     background-size: cover;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 2.6fr 1fr;
   }
 
-  .highlight__container {
-    grid-column: 2;
+  .destaque-container {
     grid-row: 2;
-    padding-left: 0;
+    grid-column: 2;
     text-align: center;
+    padding-left: 0;
   }
 
-  .highlight__image {
-    align-items: center;
+  .destaque__imagem {
     display: inline;
     max-width: 60%;
+    align-items: center;
   }
 
-  .highlight__text {
+  .destaque__texto {
     display: none;
   }
 
-  .highlight__classification {
+  .destaque__classificacao {
     display: none;
   }
 }
 
-@media screen and (max-width: 440px) {
-  .highlight {
+@media screen and (max-width: 450px) {
+  .destaque {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+      url(../img/destaque/movie-back-mobile.jpg);
+    background-position: center;
+    background-size: cover;
     grid-template-columns: 1fr;
     grid-template-rows: 1.6fr 1fr;
   }
-  .highlight__image {
+
+  .destaque__imagem {
     align-self: center;
     display: inline;
     max-width: 50%;

@@ -1,29 +1,29 @@
-.highlight__buttons {
+.destaque__botoes {
   display: flex;
   gap: 15px;
   margin-top: 10px;
   cursor: pointer;
 }
 
-.highlight__button-watch {
+.destaque__botao-assistir {
   background-color: #ffffff;
+  padding: 12px;
   display: flex;
   border-radius: 4px;
-  padding: 12px;
 }
 
-.highlight__button-watch:hover {
+.destaque__botao-assistir:hover {
   background-color: #ffffffa2;
 }
 
-.button-watch__text {
+.botao-assistir__texto {
   font-size: 17px;
   font-family: "Martel Sans", sans-serif;
   font-weight: 600;
   padding-left: 10px;
 }
 
-.highlight__button-information {
+.destaque__botao-informacao {
   background-color: #6d6d6ec0;
   display: flex;
   flex-wrap: nowrap;
@@ -32,11 +32,11 @@
   padding: 12px;
 }
 
-.highlight__button-information:hover {
+.destaque__botao-informacao:hover {
   background-color: #6d6d6e6e;
 }
 
-.button-information__text {
+.botao-informacao__texto {
   font-size: 17px;
   font-family: "Martel Sans", sans-serif;
   font-weight: 600;
@@ -44,23 +44,23 @@
 }
 
 @media (max-width: 834px) {
-  .highlight__buttons {
-    display: block;
+  .destaque__botoes {
     margin: 40px 100px;
+    display: block;
   }
 
-  .highlight__button-watch {
+  .destaque__botao-assistir {
     margin-bottom: 20px;
     justify-content: center;
   }
 
-  .highlight__button-information {
+  .destaque__botao-informacao {
     justify-content: center;
   }
 }
 
 @media (max-width: 430px) {
-  .highlight__buttons {
+  .destaque__botoes {
     display: block;
     margin: 25px 75px;
   }

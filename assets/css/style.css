@@ -1,9 +1,9 @@
+@import url(botoes.css);
+@import url(cabecalho.css);
+@import url(destaque.css);
+@import url(filmes.css);
+@import url(rodape.css);
 @import url(reset.css);
-@import url(header.css);
-@import url(highlight.css);
-@import url(buttons.css);
-@import url(movies.css);
-@import url(footer.css);
 
 body {
   background-color: #000000;
